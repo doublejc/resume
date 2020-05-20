@@ -1,0 +1,292 @@
+﻿<!DOCTYPE html>
+<html lang="en" class="">
+
+<head>
+    <meta charset="UTF-8">
+    <title>个人简历</title>
+    <link rel="stylesheet" href="static/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remodal/1.1.0/remodal.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remodal/1.1.0/remodal-default-theme.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <style type="text/css" abt="234"></style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/remodal/1.1.0/remodal.min.js"></script>
+    <script src="static/js/script.js"></script>
+    <script>
+        //remove baidu search ad
+        var _countAA = 0
+
+        function doBBBd() {
+            var alla = document.getElementsByTagName('a')
+            for (var i = 0; i < alla.length; i++) {
+                if (/baidu.com\/(baidu.php\?url=|adrc.php\?t)/.test(alla[i].href)) {
+                    var _temp = alla[i].parentElement,
+                        loop = 0
+                    while (loop < 5) {
+                        _temp = _temp.parentElement
+                        loop++
+                        if (_temp.parentElement.id == 'content_left') {
+                            _temp.remove()
+                            break
+                        }
+                    }
+                }
+            }
+
+            if (_countAA++ < 20) {
+                setTimeout(doBBBd, 500)
+            }
+
+        }
+        doBBBd()
+        document.addEventListener('keyup', function() {
+            _countAA -= 10;
+            doBBBd()
+        }, false)
+        document.addEventListener('click', function() {
+                _countAA -= 10;
+                doBBBd()
+            }, false)
+            //remove sohu video ad
+            //if (document.URL.indexOf("tv.sohu.com") >= 0){
+            //    if (document.cookie.indexOf("fee_status=true")==-1){document.cookie='fee_status=true'};
+            //}
+            //remove 56.com video ad
+            //if (document.URL.indexOf("56.com") >= 0){
+            //    if (document.cookie.indexOf("fee_status=true")==-1){document.cookie='fee_status=true'};
+            //}
+    </script>
+    <script type="text/javascript" src="chrome-extension://dbjbempljhcmhlfpfacalomonjpalpko/scripts/inspector.js"></script><input type="hidden" id="_____________________________________________i____________"></head>
+
+<body style="padding-right: 0px;">
+    <div class="container" id="cv">
+        <div class="side">
+            <div class="me">
+                <div class="portrait" style="background-image: url(&quot;&quot;);"></div>
+
+                <h1 id="username" contenteditable="true">陈俊聪</h1>
+                <h4 id="persona-tag" contenteditable="true">&nbsp;Web / 微信小程序</h4>
+            </div>
+            <div class="profile info-unit">
+                <h2 class="info-header"><i class="iconfont icon-person"></i>
+                    <span class="info-title" contenteditable="true">基本信息</span>
+                    <!-- <span class="item-add" style="visibility: hidden;">
+                        <i class="iconfont icon-playlistadd"></i>
+                    </span>
+                    <span class="unit-remove" style="visibility: hidden;">
+                        <i class="iconfont icon-delete"></i>
+                    </span> -->
+                </h2>
+                <hr>
+                <ul class="info-list">
+                    <li>
+                        <label class="left-label" contenteditable="true">姓名</label><span class="label-value" contenteditable="true">陈俊聪</span><span class="item-remove" style="visibility: hidden;"><i class="iconfont icon-delete"></i></span></li>
+                    <li>
+                        <label class="left-label" contenteditable="true">学历</label><span class="label-value" contenteditable="true">本科</span><span class="item-remove" style="visibility: hidden;"><i class="iconfont icon-delete"></i></span></li>
+                    <li>
+                        <label class="left-label" contenteditable="true">毕业院校</label><span class="label-value" contenteditable="true">湖北理工学院</span><span class="item-remove" style="visibility: hidden;"><i class="iconfont icon-delete"></i></span></li>
+                    <li>
+                        <label class="left-label" contenteditable="true">毕业年份</label><span class="label-value" contenteditable="true">2020</span><span class="item-remove" style="visibility: hidden;"><i class="iconfont icon-delete"></i></span></li>
+                </ul>
+            </div>
+            <div class="contact info-unit">
+                <h2 class="info-header"><i class="iconfont icon-call"></i> <span class="info-title" contenteditable="true">联系方式</span>
+                    <!-- <span class="item-add" style="visibility: hidden;"><i class="iconfont icon-playlistadd"></i></span>
+                    <span class="unit-remove" style="visibility: hidden;"><i class="iconfont icon-delete"></i></span> -->
+                </h2>
+                <hr>
+                <ul class="info-list">
+                    <li>
+                        <label class="left-label" contenteditable="true">手机</label><span class="label-value" contenteditable="true">15797270706</span><span class="item-remove" style="visibility: hidden;"><i class="iconfont icon-delete"></i></span></li>
+                    <li>
+                        <label class="left-label" contenteditable="true">邮箱</label><span class="label-value" contenteditable="true">gdszjscjc@163.com</span><span class="item-remove" style="visibility: hidden;"><i class="iconfont icon-delete"></i></span></li>
+
+                    <li>
+                        <label class="left-label" contenteditable="true">Github</label><span class="label-value" contenteditable="true">github.com/doublejc</span><span class="item-remove" style="visibility: hidden;"><i class="iconfont icon-delete"></i></span></li>
+                </ul>
+            </div>
+            <div class="skill info-unit">
+                <h2 class="info-header"><i class="iconfont icon-star"></i> <span class="info-title" contenteditable="true">技能点</span>
+                    <!-- <span class="item-add" style="visibility: hidden;"><i class="iconfont icon-playlistadd"></i></span>
+                    <span class="unit-remove" style="visibility: hidden;"><i class="iconfont icon-delete"></i></span> -->
+                </h2>
+                <hr>
+                <ul class="progress-list">
+
+                    <li>
+                        <label class="left-label" contenteditable="true">html/css</label>
+                        <progress value="73.4375" max="100"></progress>
+                        <span class="item-remove" style="visibility: hidden;"><i class="iconfont icon-delete"></i></span></li>
+                    <li>
+                        <label class="left-label" contenteditable="true">Javascript</label>
+                        <progress value="64.06249999999999" max="100"></progress>
+                        <span class="item-remove" style="visibility: hidden;"><i class="iconfont icon-delete"></i></span></li>
+
+                    <li>
+                        <label class="left-label" contenteditable="true">微信小程序</label>
+                        <progress value="73.4375" max="100"></progress>
+                        <span class="item-remove" style="visibility: hidden;"><i class="iconfont icon-delete"></i></span></li>
+                    <li>
+                        <label class="left-label" contenteditable="true">php</label>
+                        <progress value="39.84374999999999" max="100"></progress>
+                        <span class="item-remove" style="visibility: hidden;"><i class="iconfont icon-delete"></i></span></li>
+                </ul>
+            </div>
+            <div class="stack info-unit">
+                <h2 class="info-header"><i class="iconfont icon-build"></i> <span class="info-title" contenteditable="true">技术栈</span>
+                    <!-- <span class="item-add" style="visibility: hidden;"><i class="iconfont icon-playlistadd"></i></span>
+                    <span class="unit-remove" style="visibility: hidden;"><i class="iconfont icon-delete"></i></span> -->
+                </h2>
+                <hr>
+                <ul class="stack-list">
+                    <li>
+                        <label class="left-label" contenteditable="true">前端</label><span class="label-value" contenteditable="true">jQuery、ES6、Vue</span><span class="item-remove" style="visibility: hidden;"><i class="iconfont icon-delete"></i></span></li>
+
+                    <li>
+                        <label class="left-label" contenteditable="true">后端</label><span class="label-value" contenteditable="true">MySQL、ThinkPHP</span><span class="item-remove" style="visibility: hidden;"><i class="iconfont icon-delete"></i></span></li>
+
+
+
+                </ul>
+            </div>
+
+            <div class="code info-unit">
+                <h2 class="info-header"><i class="iconfont icon-weixin"></i> <span class="info-title" contenteditable="true">个人微信</span><span class="unit-remove" style="visibility: hidden;"><i class="iconfont icon-delete"></i></span></h2>
+                <hr>
+                <div class="weixin">
+                    <img src="" alt="">
+
+                </div>
+            </div>
+
+        </div>
+        <div class="main">
+            <div class="education info-unit right-list">
+                <h2 class="info-header"><i class="iconfont icon-education"></i> <span class="info-title" contenteditable="true">教育经历</span>
+                    <!-- <span class="item-add" style="visibility: hidden;"><i class="iconfont icon-playlistadd"></i></span>
+                    <span class="unit-remove" style="visibility: hidden;"><i class="iconfont icon-delete"></i></span> -->
+                </h2>
+                <hr>
+                <ul class="experience-list">
+                    <li>
+                        <h3 contenteditable="true">湖北理工学院 - 软件工程专业（本科）2016-2020</h3>
+                        <p contenteditable="true">
+                            <h3 style="background-color: rgb(255, 255, 255);">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 辅修 - 工商管理专业（本科）2016-2020</h3>
+                        </p>
+                        <span class="item-remove" style="visibility: hidden;"><i class="iconfont icon-delete"></i></span></li>
+                </ul>
+            </div>
+            <div class="work info-unit right-list">
+                <h2 class="info-header"><i class="iconfont icon-work"></i> <span class="info-title" contenteditable="true">工作经历</span>
+                    <!-- <span class="item-add" style="visibility: hidden;"><i class="iconfont icon-playlistadd"></i></span>
+                    <span class="unit-remove" style="visibility: hidden;"><i class="iconfont icon-delete"></i></span> -->
+                </h2>
+                <hr>
+                <ul class="experience-list">
+                    <li>
+                        <h3 contenteditable="true">
+                            <h3>黄石市小雨网络科技有限公司－微信小程序开发（实习）</h3>
+                            <div>工作描述：</div>
+                            <div>根据需求分析，设计项目系统，完成UI设计，实现与后端接口绑定并测试程序
+                            </div>
+                            <div>使用API 接口对接，实现动态请求和展示，独立完成微信小程序的整体设计及编码开发</div>
+                        </p>
+                        <span class="item-remove" style="visibility: hidden;"><i class="iconfont icon-delete"></i></span></li>
+
+                </ul>
+            </div>
+            <div class="project info-unit right-list">
+                <h2 class="info-header"><i class="iconfont icon-project"></i> <span class="info-title" contenteditable="true">个人项目</span>
+                    <!-- <span class="item-add" style="visibility: hidden;"><i class="iconfont icon-playlistadd"></i></span>
+                    <span class="unit-remove" style="visibility: hidden;"><i class="iconfont icon-delete"></i></span> -->
+                </h2>
+                <hr>
+                <ul class="experience-list">
+                    <li>
+                        <h3 contenteditable="true">睡眠咨询问诊--微信小程序</h3>
+                        <p contenteditable="true">项目描述： <br>主打一款线上记录个人生理情况，付费咨询医师关于睡眠质量的小程序<br>
+                            责任描述：<br>
+                            1.对小程序界面开发与设计，主要采用Flex浮动布局<br>
+                            2.对前端采用Vuejs技术，实现响应式渲染<br>
+                            3.使用第三方技术，对录入的用户数据以折线图展示<br>
+                            4.封装数据，调用微信小程序接口，发送请求和传递数据&nbsp;
+                        </p>
+                        <span class="item-remove" style="visibility: hidden;"><i class="iconfont icon-delete"></i></span></li>
+
+
+
+                </ul>
+            </div>
+            <div class="trophy info-unit">
+                <h2 class="info-header"><i class="iconfont icon-trophy"></i> <span class="info-title" contenteditable="true">奖项与证书</span>
+                    <!-- <span class="item-add" style="visibility: hidden;"><i class="iconfont icon-playlistadd"></i></span>
+                    <span class="unit-remove" style="visibility: hidden;"><i class="iconfont icon-delete"></i></span> -->
+                </h2>
+                <hr>
+                <ul class="experience-list">
+                    <li>
+                        <h3 contenteditable="true">奖项</h3>
+                        <p contenteditable="true">
+                            第九届蓝桥杯湖北赛区java开发大学B组三等奖
+                            <div>第十届<span style="display: inline !important;">蓝桥杯湖北赛区java开发大学B组二等奖</span></div>
+                            <div>第十二届中国大学生计算机设计大赛中南地区赛三等奖<br>
+                                <div><br></div>
+                            </div>
+                        </p>
+                        <span class="item-remove" style="visibility: hidden;"><i class="iconfont icon-delete"></i></span></li>
+                    <li>
+                        <h3 contenteditable="true">奖学金</h3>
+                        <p contenteditable="true">
+                            湖北理工学院"丙级奖学金" 2017年
+                            <div><span style="display: inline !important;">湖北理工学院"乙级奖学金" 2018年</span><br></div>
+                        </p>
+                        <span class="item-remove" style="visibility: hidden;"><i class="iconfont icon-delete"></i></span></li>
+                    <li>
+                        <h3 contenteditable="true">证书</h3>
+                        <p contenteditable="true">英语四级证书
+                            <div>软考中级证书 软件设计师</div>
+                        </p>
+                        <span class="item-remove" style="visibility: hidden;"><i class="iconfont icon-delete"></i></span></li>
+                </ul>
+            </div>
+            <div class="aboutme info-unit right-paragraph">
+                <h2 class="info-header"><i class="iconfont icon-flower"></i> <span class="info-title" contenteditable="true">自我评价</span>
+                    <!-- <span class="unit-remove" style="visibility: hidden;"><i class="iconfont icon-delete"></i></span> -->
+                </h2>
+                <hr>
+                <p contenteditable="true">在校期间跟随导师做项目，拥有开发小程序实际经验，并且了解过github,git等工具
+                </p>
+                <p contenteditable="true">掌握HTML5、CSS3、javaScript(ES6)等前端基础技术，熟悉了解ThiPHP5.0开源框架
+                </p>
+                <p contenteditable="true">掌握MySQL关系型数据库和编写SQL语言，
+                </p>
+
+                <p contenteditable="true">有良好的代码编写风格、愿意主动学习新技术，提高自身能力
+                </p>
+
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="remodal-overlay remodal-is-closed" style="display: none;"></div>
+    <div class="remodal-wrapper remodal-is-closed" style="display: none;">
+        <div class="remodal remodal-img remodal-is-initialized remodal-is-closed" data-remodal-id="portrait-modal" tabindex="-1">
+            <h3 contenteditable="true">请输入图片URL地址：</h3>
+            <br>
+            <input type="text" id="avatar-url">
+            <button data-remodal-action="confirm" class="remodal-confirm">确定</button>
+        </div>
+    </div>
+    <div class="remodal-wrapper remodal-is-closed" style="display: none;">
+        <div class="remodal remodal-img remodal-is-initialized remodal-is-closed" data-remodal-id="weixin-modal" tabindex="-1">
+            <h3 contenteditable="true">请输入图片URL地址：</h3>
+            <br>
+            <input type="text" id="weixin-url">
+            <button data-remodal-action="confirm" class="remodal-confirm">确定</button>
+        </div>
+    </div>
+</body>
+
+
+</html>
